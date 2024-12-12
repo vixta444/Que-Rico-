@@ -1,0 +1,17 @@
+document.getElementById('pickButton').addEventListener('click', function() {
+    const restaurants = [
+     'Via de Sol',
+     'Tacos Los Gomez',
+     'El Molcajete Mexican Restaurant',
+     'Milagros',
+     'Red Tacos',
+     'El Gallo Giro'
+    ];
+
+    // Get a random restaurant from the array
+    const randomIndex = Math.floor(Math.random() * restaurants.length);
+    const selectedRestaurant = restaurants[randomIndex];
+
+    // Display the result
+    document.getElementById('result').textContent = `How about ${selectedRestaurant}?`;
+});
